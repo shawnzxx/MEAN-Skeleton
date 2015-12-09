@@ -1,0 +1,15 @@
+{
+  "name": "mean_cms",
+  "version": "0.0.0",
+  "description": "CMS product list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shawn ZhangXiaoxiao",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0"
+  }
+}
