@@ -20,7 +20,7 @@ module.exports = function () {
     });
 
     //Register the model Schema
-    //require('../app/models/user.server.model');
+    require('../server/models/message.model');
 
     return db;
 };

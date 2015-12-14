@@ -5,6 +5,8 @@
 // Invoke 'strict' JavaScript mode
 'use strict';
 
+var messageCtrl = require('../controllers/message.controller');
+
 // Define the routes module' method
 module.exports = function(app) {
     // Load the 'index' controller
@@ -17,7 +19,5 @@ module.exports = function(app) {
     //* mean all request dont have specific route setting will go index.html
     //and sent it back to client, let client decide which route page to go.
     //Typically we should make sure all route in client will also reflect on server too.
-    app.get('/', function (req, res) {
-        res.render('index');
-    });
+    app.get('/', messageCtrl.render);
 };
