@@ -6,4 +6,4 @@
 'use strict';
 
 //set up env variable to the node default value, if node default value not been set we set one
-module.exports = require('./env/' + process.env.NODE_ENV + '.js');
+module.exports = require('./env/' + process.env.npm + '.js');
