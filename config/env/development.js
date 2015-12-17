@@ -7,5 +7,6 @@
 
 // Set the 'development' environment configuration object
 module.exports = {
-    db: 'mongodb://localhost/mean_cms'
+    //db: 'mongodb://localhost/mean_cms'
+    db: 'mongodb://shawnzxx:test1234@ds033135.mongolab.com:33135/mean'
 };

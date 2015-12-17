@@ -10,7 +10,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 var mongoose = require('./config/mongoose'),
     express = require('./config/express');
-var port = 3030;
+
 
 // Create a new Mongoose connection instance
 var db = mongoose();
@@ -18,6 +18,8 @@ var db = mongoose();
 // Create a new Express application instance
 var app = express();
 
+//tell app to check port setting if not set then use 3030
+var port = process.env.PORT || 3030;
 app.listen(port);
 
 // Log the server status to the console
